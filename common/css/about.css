@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  width: 100vw;
+}
+#ticket {
+  background: linear-gradient(269.79deg, #E5D8FF 0.2%, #D1D0FE 99.83%);
+  padding: 70px 0;
+  width: 100vw;
+}
+.ticket_detail {
+  width: 90vw;
+  background-color: white;
+  margin: auto;
+  position: relative;
+  border-radius: 25px;
+}
+img {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  max-width: 90%;
+  height: auto;
+  margin: 5%;
+  margin-bottom: 0;
+}
+.holes-top:before {
+  left: -200px;
+}
+.holes-top:after {
+  left: 200px;
+}
+.holes-lower {
+  position: relative;
+  margin: 25px 20px;
+  border: 1px dashed #aaa;
+}
+.holes-lower:before, .holes-lower:after {
+  content: "";
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(269.79deg, #E5D8FF 0.2%, #D1D0FE 99.83%);
+  position: absolute;
+  border-radius: 50%;
+}
+.holes-lower:before {
+  top: -21px;
+  left: -39px;
+}
+.holes-lower:after {
+  top: -21px;
+  left: 295px;
+}
+.title {
+  padding: 50px 25px 10px;
+}
+.cinema {
+  font-size: 22px;
+  font-weight: 700;
+}
+.movie-title {
+  color: #aaa;
+  font-size: 13px;
+  font-weight: 600;
+}
+.info {
+  padding: 15px 25px;
+}
+table {
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+table tr {
+  margin-bottom: 10px;
+}
+table th {
+  text-align: left;
+}
+table th:nth-of-type(1) {
+  width: 61%;
+}
+table th:nth-of-type(2) {
+  width: 40%;
+}
+table th:nth-of-type(3) {
+  width: 15%;
+}
+table td {
+  width: 33%;
+  font-size: 19px;
+}
+.serial {
+  padding: 25px;
+}
+.serial table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+.serial td {
+  width: 3px;
+  height: 50px;
+}
+.numbers td {
+  font-size: 16px;
+  text-align: center;
+}
+.text {
+  margin-top: 10%;
+  text-align: center;
+}
+#content {
+  background-color: white;
+  width: 100vw;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+.about {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: 70px auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #633BBC;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+  color: #271A45;
+}
+.form > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.form > div > p > span {
+  font-weight: 700;
+}
+.list > div {
+  display: flex;
+  justify-content: space-around;
+  text-align: start;
+  font-weight: 400;
+  line-height: 35px;
+  font-size: 20px;
+}
+.list > div::before {
+  content:"\A";
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background: #000;
+  margin-top: 14px;
+}
+.list > p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #C4C4CC;
+}
+.author {
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+.main {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.author_avatar {
+  width: 120px;
+}
+.author_avatar > img {
+  border-radius: 50%;
+}
+.author_infor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: 700;
+  line-height: 40px;
+}
+.navi {
+  display: flex;
+  gap: 10px;
+}
+.navi > a {
+  color: #323238;
+}
+.pc_only {
+  display: none;
+}
+@media screen and (min-width: 425px) {
+  .cinema {
+    font-size: 24px;
+  }
+  .movie-title {
+    font-size: 15px;
+  }
+  table td {
+    font-size: 20px;
+  }
+  .holes-lower:after {
+    top: -21px;
+    left: 340px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  #ticket {
+
+  }
+  #content {
+    margin: 45px auto;
+  }
+  .cinema {
+    font-size: 32px;
+  }
+  .movie-title {
+    font-size: 18px;
+  }
+  .title {
+    padding: 50px 45px 10px;
+  }
+  .info {
+    padding: 15px 45px;
+  }
+  table {
+    width: 90%;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  table td {
+    font-size: 28px;
+  }
+  .holes-lower:after {
+    top: -21px;
+    left: 650px;
+  }
+  .text {
+    margin: 5%;
+    font-size: 24px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  .about {
+    width: 90vw;
+    margin-top: 45px;
+  }
+  .about.author {
+    margin-top: 0;
+  }
+  .list > div {
+    line-height: 0;
+  }
+  .list > div::before {
+    margin-top: 0;
+  }
+  .list > p {
+    padding: 2vh 0;
+    font-size: 18px;
+  }
+  .pc_only {
+    width: 119px;
+    height: 158px;
+    border-radius: 9px;
+    border: 4px solid #000000;
+    background: #377CE4;
+    color: #fff;
+    text-align: center;
+  }
+  .form {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+  }
+  .form > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 18px;
+  }
+  .about.author > div {
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+    justify-content: space-between;
+  }
+  .main {
+    margin-top: 0;
+  }
+  .pc_only.out {
+    background: #E01B4A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #content {
+    margin: 0;
+    width: 60vw;
+  }
+  .about {
+    width: 60vw;
+  }
+  #ticket {
+    width: 40vw;
+  }
+  .ticket_detail {
+    width: 30vw;
+    height: 120vh;
+  }
+  .title {
+    padding: 20px 25px 10px;
+  }
+  .cinema {
+    font-size: 20px;
+  }
+  .info {
+    padding: 15px 20px;
+  }
+  table td {
+    font-size: 17px;
+  }
+  .holes-lower:after {
+    top: -21px;
+    left: 265px;
+  }
+  .text {
+    margin: 5% 0;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cinema {
+    font-size: 28px;
+  }
+  .movie-title {
+    font-size: 16px;
+  }
+  .title {
+    padding: 50px 25px 10px;
+  }
+  .info {
+    padding: 15px 25px;
+  }
+  table {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  table td {
+    font-size: 24px;
+  }
+  .holes-lower:after {
+    top: -21px;
+    left: 650px;
+  }
+  .text {
+    margin: 5%;
+    font-size: 24px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  .text {
+    font-size: 20px;
+  }
+  .holes-lower:after {
+    top: -21px;
+    left: 390px;
+  }
+  .form {
+    padding: 0 4vw;
+  }
+  .about.author > div {
+    padding: 0 4vw;
+  }
+}
