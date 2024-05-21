@@ -210,6 +210,12 @@ h2 {
 .pc_only {
   display: none;
 }
+@media screen and (max-width: 320px) {
+  .holes-lower:after {
+    top: -21px;
+    left: 243px;
+  }
+}
 @media screen and (min-width: 425px) {
   .cinema {
     font-size: 24px;
@@ -373,6 +379,10 @@ h2 {
   .movie-title {
     font-size: 16px;
   }
+  .ticket_detail {
+    width: 30vw;
+    height: 126vh;
+  }
   .title {
     padding: 50px 25px 10px;
   }
@@ -415,5 +425,11 @@ h2 {
   }
   .about.author > div {
     padding: 0 4vw;
+  }
+}
+@media screen and (min-width: 1505) {
+  .holes-lower:after {
+    top: -21px;
+    left: 410px;
   }
 }
